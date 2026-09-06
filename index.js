@@ -17,20 +17,18 @@ const env = {
   OMNIROUTE_SERVER_HOST: "0.0.0.0",
   HOSTNAME: "0.0.0.0",
   NODE_ENV: "production",
-  NODE_OPTIONS: "--max-old-space-size=300",
-  OMNIROUTE_MEMORY_MB: "300",
-  DISABLE_ARENA_ELO_SYNC: "1",
-  DISABLE_PROVIDER_STATS_SYNC: "1",
+  NODE_OPTIONS: "--max-old-space-size=420",
+  OMNIROUTE_MEMORY_MB: "420",
   STORAGE_ENCRYPTION_KEY: process.env.STORAGE_ENCRYPTION_KEY || "b26707cc3ad0b6868374dc304ae9ee5dd468facfe57074c1ed6fe2267bcb8b81"
 };
 
 const serverPath = path.join(__dirname, "node_modules", "omniroute", "dist", "server-ws.mjs");
 
-console.log(`Starting OmniRoute on port ${port} with DATA_DIR=${dataDir} (memory limit 300MB)...`);
+console.log(`Starting OmniRoute on port ${port} with DATA_DIR=${dataDir}...`);
 
 const child = spawn(process.execPath, [
   "--dns-result-order=ipv4first",
-  "--max-old-space-size=300",
+  "--max-old-space-size=420",
   serverPath
 ], {
   cwd: path.join(__dirname, "node_modules", "omniroute", "dist"),

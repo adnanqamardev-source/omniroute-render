@@ -16,6 +16,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: NODE_OPTIONS
-        value: --max-old-space-size=300
+        value: --max-old-space-size=420
       - key: OMNIROUTE_MEMORY_MB
-        value: "300"
+        value: "420"
