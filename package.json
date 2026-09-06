@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "npx omniroute serve --port $PORT --no-open --log --no-tray"
+    "start": "node index.js"
   },
   "dependencies": {
     "omniroute": "^3.8.50"
