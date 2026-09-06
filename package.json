@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "npx omniroute serve --port $PORT --host 0.0.0.0"
+    "start": "npx omniroute serve --port $PORT --no-open --log --no-tray"
   },
   "dependencies": {
-    "omniroute": "latest"
+    "omniroute": "^3.8.50"
   }
 }

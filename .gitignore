@@ -1,0 +1,9 @@
+node_modules/
+.omniroute/call_logs/
+.omniroute/cloudflared/
+.omniroute/bin/
+.omniroute/logs/
+.omniroute/supervisor/
+.omniroute/server/
+.omniroute/storage.sqlite-shm
+.omniroute/storage.sqlite-wal
