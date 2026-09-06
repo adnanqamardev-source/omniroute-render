@@ -22,16 +22,21 @@ const env = {
   STORAGE_ENCRYPTION_KEY: process.env.STORAGE_ENCRYPTION_KEY || "b26707cc3ad0b6868374dc304ae9ee5dd468facfe57074c1ed6fe2267bcb8b81"
 };
 
-const serverPath = path.join(__dirname, "node_modules", "omniroute", "dist", "server-ws.mjs");
+const cliPath = path.join(__dirname, "node_modules", "omniroute", "bin", "omniroute.mjs");
 
-console.log(`Starting OmniRoute on port ${port} with DATA_DIR=${dataDir}...`);
+console.log(`Starting OmniRoute via CLI on port ${port} with DATA_DIR=${dataDir}...`);
 
 const child = spawn(process.execPath, [
   "--dns-result-order=ipv4first",
   "--max-old-space-size=420",
-  serverPath
+  cliPath,
+  "serve",
+  "--port", port,
+  "--no-open",
+  "--log",
+  "--no-tray"
 ], {
-  cwd: path.join(__dirname, "node_modules", "omniroute", "dist"),
+  cwd: __dirname,
   env,
   stdio: "inherit"
 });
