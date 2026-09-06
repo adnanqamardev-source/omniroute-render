@@ -1,0 +1,10 @@
+{
+  "pid": 13380,
+  "startedAt": "2026-09-05T17:45:43.083Z",
+  "lastHeartbeatAt": "2026-09-05T17:45:43.084Z",
+  "version": "1.8.1",
+  "transport": "stdio",
+  "scopesEnforced": false,
+  "allowedScopes": [],
+  "toolCount": 110
+}

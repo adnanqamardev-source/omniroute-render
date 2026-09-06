@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-05T09:03:25.381Z",
+  "targets": [
+    {
+      "id": "antigravity",
+      "name": "Antigravity IDE",
+      "hosts": [
+        "daily-cloudcode-pa.googleapis.com",
+        "cloudcode-pa.googleapis.com",
+        "daily-cloudcode-pa.sandbox.googleapis.com",
+        "autopush-cloudcode-pa.sandbox.googleapis.com"
+      ],
+      "endpointPatterns": [
+        "/v1internal:generateContent",
+        "/v1internal:streamGenerateContent",
+        "/v1internal:loadCodeAssist",
+        "/v1internal:onboardUser"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro IDE",
+      "hosts": [
+        "api.anthropic.com"
+      ],
+      "endpointPatterns": [
+        "/v1/messages"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "copilot",
+      "name": "GitHub Copilot",
+      "hosts": [
+        "api.githubcopilot.com",
+        "copilot-proxy.githubusercontent.com"
+      ],
+      "endpointPatterns": [
+        "/chat/completions",
+        "/v1/chat/completions"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "ghe-copilot",
+      "name": "GitHub Enterprise Copilot",
+      "hosts": [],
+      "endpointPatterns": [
+        "/chat/completions",
+        "/v1/chat/completions",
+        "/responses"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "hosts": [
+        "chatgpt.com"
+      ],
+      "endpointPatterns": [
+        "/backend-api/codex/chat/completions",
+        "/v1/chat/completions"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor IDE",
+      "hosts": [
+        "api2.cursor.sh"
+      ],
+      "endpointPatterns": [
+        "/v1/chat/completions"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "zed",
+      "name": "Zed",
+      "hosts": [
+        "api.zed.dev"
+      ],
+      "endpointPatterns": [
+        "/v1/chat/completions"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "hosts": [
+        "api.anthropic.com"
+      ],
+      "endpointPatterns": [
+        "/v1/messages"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "open-code",
+      "name": "OpenCode",
+      "hosts": [
+        "opencode.ai"
+      ],
+      "endpointPatterns": [
+        "/v1/chat/completions"
+      ],
+      "viability": "supported"
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "hosts": [
+        "trae.invalid"
+      ],
+      "endpointPatterns": [],
+      "viability": "investigating"
+    }
+  ]
+}

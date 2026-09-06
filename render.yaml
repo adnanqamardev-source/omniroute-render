@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: omniroute
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install
+    startCommand: npx omniroute serve --port $PORT --host 0.0.0.0
+    envVars:
+      - key: STORAGE_ENCRYPTION_KEY
+        value: b26707cc3ad0b6868374dc304ae9ee5dd468facfe57074c1ed6fe2267bcb8b81
+      - key: NODE_ENV
+        value: production

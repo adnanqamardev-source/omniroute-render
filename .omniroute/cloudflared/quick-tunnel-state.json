@@ -1,0 +1,12 @@
+{
+  "binaryPath": "C:\\Users\\adnan\\.omniroute\\cloudflared\\bin\\cloudflared.exe",
+  "installSource": "managed",
+  "ownerPid": null,
+  "pid": null,
+  "publicUrl": null,
+  "apiUrl": null,
+  "targetUrl": "http://127.0.0.1:20128",
+  "status": "stopped",
+  "lastError": null,
+  "startedAt": null
+}
